@@ -143,3 +143,33 @@ button[type="button"]:hover {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+
+
+/* Стилі для мобільного пристрою */
+@media only screen and (max-width: 480px) {
+    /* Змінюємо ширину форми */
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Змінюємо розміри кнопок і введених полів */
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* Змінюємо розміри кнопки "Надіслати" */
+    button[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+}
