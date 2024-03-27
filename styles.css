@@ -1,0 +1,145 @@
+/* Основні стилі */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #022202de; /* Зелений фон */
+    margin: 120px; /* Встановлення відступу зверху */
+    padding: 0; /* Забираємо відступ вмісту */
+}
+
+.logo img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100%; /* Закруглені кути, щоб фото виглядало як коло */
+}
+
+.logo {
+    position: fixed;
+    top: 20px; /* Відступ зверху */
+    left: 50px; /* Відступ зліва */
+    z-index: 1000; /* Підвищте значення z-index, якщо потрібно */
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Основні стилі для вхідних елементів форми */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"], /* Додано для поля віку */
+select,
+textarea,
+button[type="submit"],
+input[type="checkbox"],
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Бежевий колір */
+    margin-bottom: 10px; /* Додатковий відступ між елементами форми */
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Додаткові стилі */
+
+#skincare-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+#skincare-form label {
+    font-weight: bold;
+}
+
+#skincare-form input[type="file"] {
+    border: none;
+}
+
+#skincare-form input[type="checkbox"],
+#skincare-form input[type="radio"] {
+    width: auto;
+} 
+
+button[type="button"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Відступ між кнопками */
+}
+
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+
+.uploaded-photo {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100px; /* Змінено максимальну ширину */
+    height: auto; /* Автоматично обчислюємо висоту */
+}
+
+.uploaded-photo.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Змінено на відсоткову ширину відносно ширини вікна */
+    height: 100vh; /* Змінено на відсоткову висоту відносно висоти вікна */
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    cursor: zoom-out;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
