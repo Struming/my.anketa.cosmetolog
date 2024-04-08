@@ -7,35 +7,23 @@ body {
     padding: 0; /* Забираємо відступ вмісту */
 }
 
-.logo {
-    
-    top: 20px; /* Відступ зверху */
-    left: 50px; /* Відступ зліва */
-    z-index: 1000; /* Підвищте значення z-index, якщо потрібно */
-    width: 200px; /* Ширина логотипу */
-    height: auto; /* Автоматично обчислюємо висоту */
-    background-color: transparent; /* Прозорий фон */
-    margin-right: 20px; /* Відступ справа */
-    margin-bottom: 20px; /* Відступ знизу */
-}
-
-
-.logo img {
-    width: 100%; /* Ширина картинки у 100% від обгортки */
-    height: auto; /* Автоматично обчислюємо висоту */
-    border-radius: 50px; /* Закруглені кути, якщо потрібно */
-}
-
-/* Фіксація логотипу при прокручуванні */
-.logo.fixed {
+.header {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Встановіть відповідну висоту вашого хедера */
+    background-color: transparent; /* Фон хедера */
+    border-bottom: 1px solid white; /* Підкреслення хедера білою лінією */
+    z-index: 1000; /* Підвищте значення z-index, якщо потрібно */
 }
 
 
 h1 {
     text-align: center;
     color: #333;
+    border-bottom: 2px solid white; /* Підкреслення білою лінією */
+    padding-bottom: 10px; /* Додатковий відступ знизу для підкреслення */
 }
 
 .form-group {
@@ -179,7 +167,7 @@ button[type="button"]:hover {
     }
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
     /* Змінюємо розмір тексту для заголовка H1 */
     h1 {
         font-size: 14px; /* Змінюємо розмір тексту на 20px для мобільного пристрою */
@@ -238,13 +226,11 @@ button[type="button"]:hover {
 
 /* Стилі для десктопів */
 @media only screen and (min-width: 1025px) {
-    .logo {
-        top: 20px; /* Збільшуємо відступ логотипу для десктопів */
-        left: 50px; /* Збільшуємо відступ логотипу для десктопів */
-    }
+  
 
     .logo img {
-        max-width: 20%; /* Зменшуємо розмір логотипу для десктопів */
+        max-width: 50%; /* Зменшуємо розмір логотипу для десктопів */
+    
     }
 
 
